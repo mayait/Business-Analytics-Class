@@ -1,5 +1,6 @@
 import json
 import urllib.request
+import random
 import ipywidgets as widgets
 from IPython.display import display
 
@@ -7,6 +8,7 @@ class Quiz:
     def __init__(self, filename):
         questions_file = f"https://raw.githubusercontent.com/mayait/Business-Analytics-Class/main/python_101_2024/{filename}.json"
         self.questions = self.load_questions(questions_file)
+        random.shuffle(self.questions)  # Mezclar las preguntas aleatoriamente
         self.current_question_index = 0
         self.score = 0
         self.create_widgets()
@@ -18,7 +20,13 @@ class Quiz:
 
     def create_widgets(self):
         self.question_label = widgets.Label(value="")
-        self.options = widgets.RadioButtons(options=[], value=None, description='Opciones:')
+        self.options = widgets.RadioButtons(
+            options=[], 
+            value=None, 
+            description='Opciones:', 
+            layout={'width': 'max-content'},  # Ajustar el ancho
+            style={'description_width': 'initial'}
+        )
         self.submit_button = widgets.Button(description="Enviar")
         self.submit_button.on_click(self.check_answer)
         self.feedback_label = widgets.Label(value="")
@@ -37,15 +45,15 @@ class Quiz:
     def check_answer(self, b):
         selected_option = self.options.value
         if selected_option is None:
-            self.feedback_label.value = "Por favor, selecciona una opción."
+            self.feedback_label.value = "Por favor, selecciona una opción. ❌"
             return
 
         correct_option = self.questions[self.current_question_index]['answer']
         if selected_option == correct_option:
-            self.feedback_label.value = "¡Correcto!"
+            self.feedback_label.value = "¡Correcto! 🎉"
             self.score += 1
         else:
-            self.feedback_label.value = f"Incorrecto. La respuesta correcta es: {correct_option}"
+            self.feedback_label.value = "Incorrecto. ❌"
 
         self.next_button.disabled = False
 
@@ -57,7 +65,7 @@ class Quiz:
             self.show_final_score()
 
     def show_final_score(self):
-        self.question_label.value = f"Has completado el quiz. Tu puntuación final es: {self.score}/{len(self.questions)}"
+        self.question_label.value = f"Has completado el quiz. Tu puntuación final es: {self.score}/{len(self.questions)} 🎓"
         self.options.options = []
         self.submit_button.disabled = True
         self.next_button.disabled = True
