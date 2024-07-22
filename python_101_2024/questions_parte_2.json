@@ -1,0 +1,102 @@
+[
+    {
+        "question": "¿Qué significa que Python es un lenguaje de 'tipado dinámico'?",
+        "options": [
+            "Las variables deben declarar su tipo antes de ser usadas",
+            "Las variables pueden cambiar de tipo en tiempo de ejecución",
+            "Las variables son siempre enteros",
+            "Las variables no pueden cambiar su valor"
+        ],
+        "answer": "Las variables pueden cambiar de tipo en tiempo de ejecución"
+    },
+    {
+        "question": "¿Cuál de los siguientes no es un tipo de dato en Python?",
+        "options": [
+            "int",
+            "float",
+            "char",
+            "complex"
+        ],
+        "answer": "char"
+    },
+    {
+        "question": "¿Cuál es el operador usado para la concatenación de cadenas en Python?",
+        "options": [
+            "+",
+            "-",
+            "*",
+            "/"
+        ],
+        "answer": "+"
+    },
+    {
+        "question": "¿Cuál de las siguientes afirmaciones sobre las cadenas en Python es verdadera?",
+        "options": [
+            "Las cadenas son mutables",
+            "Las cadenas pueden contener comillas simples y dobles",
+            "Las cadenas no pueden ser concatenadas",
+            "Las cadenas solo pueden contener texto"
+        ],
+        "answer": "Las cadenas pueden contener comillas simples y dobles"
+    },
+    {
+        "question": "¿Qué operador aritmético en Python se usa para obtener el resto de una división?",
+        "options": [
+            "/",
+            "*",
+            "%",
+            "-"
+        ],
+        "answer": "%"
+    },
+    {
+        "question": "¿Cuál es el resultado de la expresión 3 + 2 < 5 - 7 en Python?",
+        "options": [
+            "True",
+            "False",
+            "Error de sintaxis",
+            "None"
+        ],
+        "answer": "False"
+    },
+    {
+        "question": "¿Cuál de los siguientes operadores tiene la mayor precedencia en Python?",
+        "options": [
+            "+",
+            "**",
+            "*",
+            "=="
+        ],
+        "answer": "**"
+    },
+    {
+        "question": "¿Cuál de las siguientes declaraciones es verdadera sobre la función input() en Python?",
+        "options": [
+            "Devuelve siempre un número",
+            "Devuelve siempre una cadena",
+            "Es usada para imprimir texto",
+            "No puede ser usada para obtener entrada del usuario"
+        ],
+        "answer": "Devuelve siempre una cadena"
+    },
+    {
+        "question": "¿Cuál es el propósito de la notación f antes de una cadena en Python?",
+        "options": [
+            "Formatear la cadena",
+            "Indicar una función",
+            "Marcar la cadena como una variable",
+            "Indicar un comentario"
+        ],
+        "answer": "Formatear la cadena"
+    },
+    {
+        "question": "¿Cuál es el resultado de la siguiente operación en Python: 5 ** 2?",
+        "options": [
+            "10",
+            "25",
+            "7",
+            "20"
+        ],
+        "answer": "25"
+    }
+]
