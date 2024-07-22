@@ -1,0 +1,42 @@
+[
+    {
+        "question": "¿Cuál de las siguientes es una característica de Python?",
+        "options": ["Compilado", "Tipado estático", "Tipado dinámico", "Sólo orientado a objetos"],
+        "answer": "Tipado dinámico"
+    },
+    {
+        "question": "¿Qué significa que Python es un lenguaje interpretado?",
+        "options": ["Requiere compilación", "El código se ejecuta línea por línea", "Es sólo para aplicaciones web", "No tiene bibliotecas estándar"],
+        "answer": "El código se ejecuta línea por línea"
+    },
+    {
+        "question": "¿Cuál de las siguientes no es una característica de Python?",
+        "options": ["Sintaxis sencilla y clara", "Biblioteca estándar amplia", "Compilado", "Comunidad activa"],
+        "answer": "Compilado"
+    },
+    {
+        "question": "¿Qué estilo de indentación recomienda PEP 8?",
+        "options": ["Tabulaciones", "4 espacios por nivel de indentación", "2 espacios por nivel de indentación", "Ninguna de las anteriores"],
+        "answer": "4 espacios por nivel de indentación"
+    },
+    {
+        "question": "¿Cuál es la longitud máxima recomendada para las líneas de código según PEP 8?",
+        "options": ["72 caracteres", "79 caracteres", "100 caracteres", "120 caracteres"],
+        "answer": "79 caracteres"
+    },
+    {
+        "question": "¿Cómo se deben ordenar las importaciones en un archivo Python según PEP 8?",
+        "options": ["Importaciones locales, importaciones de terceros, importaciones estándar", "Importaciones estándar, importaciones de terceros, importaciones locales", "Importaciones de terceros, importaciones estándar, importaciones locales", "Orden alfabético"],
+        "answer": "Importaciones estándar, importaciones de terceros, importaciones locales"
+    },
+    {
+        "question": "¿Qué tipo de comentarios se recomienda usar para explicar por qué se hace algo en el código?",
+        "options": ["Comentarios en línea", "Docstrings", "Comentarios al final de la línea", "Comentarios claros y útiles"],
+        "answer": "Comentarios claros y útiles"
+    },
+    {
+        "question": "¿Qué formato de nombres se recomienda para las clases según PEP 8?",
+        "options": ["minúsculas con guiones bajos", "CamelCase", "MAYÚSCULAS", "PascalCase"],
+        "answer": "CamelCase"
+    }
+]
