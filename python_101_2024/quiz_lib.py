@@ -24,7 +24,7 @@ class Quiz:
             options=[], 
             value=None, 
             description='Opciones:', 
-            layout={'width': 'max-content'},  # Ajustar el ancho
+            layout={'width': '800px'},  # Ajustar el ancho
             style={'description_width': 'initial'}
         )
         self.submit_button = widgets.Button(description="Enviar")
