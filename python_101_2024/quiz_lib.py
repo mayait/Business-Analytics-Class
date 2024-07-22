@@ -1,17 +1,19 @@
 import json
+import urllib.request
 import ipywidgets as widgets
 from IPython.display import display
 
 class Quiz:
-    def __init__(self, questions_file):
+    def __init__(self, filename):
+        questions_file = f"https://raw.githubusercontent.com/mayait/Business-Analytics-Class/main/python_101_2024/{filename}.json"
         self.questions = self.load_questions(questions_file)
         self.current_question_index = 0
         self.score = 0
         self.create_widgets()
 
     def load_questions(self, questions_file):
-        with open(questions_file, 'r') as file:
-            questions = json.load(file)
+        with urllib.request.urlopen(questions_file) as url:
+            questions = json.loads(url.read().decode())
         return questions
 
     def create_widgets(self):
@@ -65,5 +67,5 @@ class Quiz:
         display(self.question_label, self.options, self.submit_button, self.feedback_label, self.next_button)
 
 # Example of how to use the Quiz class
-# quiz = Quiz('questions.json')
+# quiz = Quiz('questions')
 # quiz.start_quiz()
